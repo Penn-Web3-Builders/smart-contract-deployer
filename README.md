@@ -1,19 +1,4 @@
-# BridXe Escrow Protocol
-
-Medium Article: https://medium.com/@zilecao/ab3e25919f75
-
-----
-
-Example contract: https://ropsten.etherscan.io/address/0xE9A03Bd5fA823FD0CDA9B841514010A559959F99#code
-
-Note: Currently when making a sell order, seller needs to send 0.0045 ETH 
-
-Note2: There are still some bugs with current escrow contract, and more features will be implemented in the near future
-
-----
-
-To use the current version (for a more in-depth user guide with videos, scroll to the Quickstart section on our medium article):
-
+# Penn W3B Solidity 101 Workshop
 
 ----
 
@@ -21,7 +6,7 @@ To use the current version (for a more in-depth user guide with videos, scroll t
 2. In a terminal, run 
 
 ```
-cd escrow-contract2
+cd smart-contract-deployer
 npm install 
 ```
 
