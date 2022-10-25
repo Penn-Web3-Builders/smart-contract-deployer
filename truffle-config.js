@@ -63,29 +63,16 @@ module.exports = {
     //
     // Useful for deploying to a public network.
     // Note: It's important to wrap the provider as a function to ensure truffle uses a new provider every time.
-    rinkeby: {
+    goerli: {
         provider: () => new HDWalletProvider({
-          privateKeys: [process.env.PRIVATE_KEY_1],
-          providerOrUrl: process.env.RINKEBY_RPC_URL,
+          privateKeys: [process.env.PRIVATE_KEY],
+          providerOrUrl: process.env.GOERLI_RPC_URL,
           numberOfAddresses: 1,
         }),
-        network_id: 4,
-        gas: 5500000,
+        network_id: 5,
         confirmations: 2,
         timeoutBlocks: 200,
         skipDryRun: true
-    },
-    ropsten: {
-      provider: () => new HDWalletProvider({
-        privateKeys: [process.env.PRIVATE_KEY_1],
-        providerOrUrl: process.env.ROPSTEN_RPC_URL,
-        numberOfAddresses: 1,
-      }),
-      network_id: 3,       // Ropsten's id
-      gas: 5500000,        // Ropsten has a lower block limit than mainnet
-      confirmations: 2,    // # of confirmations to wait between deployments. (default: 0)
-      timeoutBlocks: 200,  // # of blocks before a deployment times out  (minimum/default: 50)
-      skipDryRun: true     // Skip dry run before migrations? (default: false for public nets )
     },
     //
     // Useful for private networks

@@ -22,28 +22,11 @@ module.exports = {
     hardhat: {
       chainId: 1337
     },
-    ropsten: {
-      url: process.env.ROPSTEN_RPC_URL || "",
+    goerli: {
+      url: process.env.GOERLI_RPC_URL || "",
+      chainId: 5,
       accounts:
-        process.env.PRIVATE_KEY_1 !== undefined ? [process.env.PRIVATE_KEY_1] : [],
-    },
-    mumbai: {
-      url: process.env.MUMBAI_RPC_URL || "",
-      chainId: 80001,
-      accounts:
-        process.env.PRIVATE_KEY_1 !== undefined ? [process.env.PRIVATE_KEY_1] : [],
-    },
-    aurora_test: {
-      url: process.env.AURORATEST_RPC_URL || "",
-      chainId: 1313161555,
-      accounts:
-        process.env.PRIVATE_KEY_1 !== undefined ? [process.env.PRIVATE_KEY_1] : [],
-    },
-    //zileNet3 is a local avalanche subnet running on Zile's device
-    zileNet3: {
-      url: process.env.ZILENET3_RPC_URL || "",
-      chainId: 12345,
-      accounts: process.env.PRIVATE_KEY_1 !== undefined ? [process.env.PRIVATE_KEY_1] : [],
+        process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
     },
   },
   etherscan: {

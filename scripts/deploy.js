@@ -14,12 +14,12 @@ async function main() {
   // await hre.run('compile');
 
   // We get the contract to deploy
-  const BridXeEscrow = await hre.ethers.getContractFactory("BridXeEscrow");
-  const bridXeEscrow = await BridXeEscrow.deploy();
+  const DownBadContract = await hre.ethers.getContractFactory("DownBadContract");
+  const downBadContract = await DownBadContract.deploy();
 
-  await bridXeEscrow.deployed();
+  await downBadContract.deployed();
 
-  console.log("BridXeEscrow deployed to:", bridXeEscrow.address);
+  console.log("DownBadContract deployed to:", downBadContract.address);
 }
 
 // We recommend this pattern to be able to use async/await everywhere
