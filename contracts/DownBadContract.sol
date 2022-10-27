@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.7;
 
-import './ReentrancyGuard.sol';
+import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 
 contract DownBadContract is ReentrancyGuard {
