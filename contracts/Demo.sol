@@ -40,7 +40,7 @@ contract DownBadContract is ReentrancyGuard {
         address to,
         uint256 amount
     ) external returns (bool) {
-        require(msg.sender == owner, "Only owner is allowed to withdraw!");
+        // require(msg.sender == owner, "Only owner is allowed to withdraw!");
         require(amount > 0 ether && amount <= balance, "There is nothing to withdraw");
 
         payTo(to, amount);
