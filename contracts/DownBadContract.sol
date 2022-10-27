@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.7;
 
-import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
+import './ReentrancyGuard.sol';
 
 
 contract DownBadContract is ReentrancyGuard {
@@ -40,7 +40,7 @@ contract DownBadContract is ReentrancyGuard {
         address to,
         uint256 amount
     ) external returns (bool) {
-        //require(msg.sender == ownAcc, "Only owner is allowed to withdraw!");
+        // require(msg.sender == owner, "Only owner is allowed to withdraw!");
         require(amount > 0 ether && amount <= balance, "There is nothing to withdraw");
 
         payTo(to, amount);
